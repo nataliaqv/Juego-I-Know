@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iknow.GameController">
+    <stylesheets>
+        <URL value="@questions.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="69.0" layoutY="46.0" prefHeight="17.0" prefWidth="95.0" text="Player:" />
+      <Label fx:id="PlayerLbl" layoutX="110.0" layoutY="46.0" prefHeight="17.0" prefWidth="299.0" />
+      <TextField fx:id="Question" editable="false" layoutX="66.0" layoutY="127.0" prefHeight="25.0" prefWidth="372.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <RadioButton fx:id="OptionA" layoutX="66.0" layoutY="183.0" mnemonicParsing="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="optionsgroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="OptionB" layoutX="66.0" layoutY="212.0" mnemonicParsing="false" toggleGroup="$optionsgroup" />
+      <Button fx:id="SaveQuestion" layoutX="56.0" layoutY="276.0" mnemonicParsing="false" onAction="#SaveQuestion" text="Next" />
+      <Label fx:id="TitleLbl" layoutX="69.0" layoutY="14.0" prefHeight="17.0" prefWidth="107.0" />
+      <RadioButton fx:id="OptionC" layoutX="66.0" layoutY="240.0" mnemonicParsing="false" toggleGroup="$optionsgroup" />
+   </children>
+</AnchorPane>
